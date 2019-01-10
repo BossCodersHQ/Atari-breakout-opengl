@@ -1,7 +1,8 @@
-LDLIBS = -lfreeglut -lopengl32 -lglu32  -lm 
+LIBDIRS= -framework GLUT -framework OpenGL
+LDLIBS = -lobjc -lm
 
-CXXFLAGS= -O3  -std=c++11
-LDFLAGS= $(CXXFLAGS) $(LIBDIRS)
+CPPFLAGS= -Wno-deprecated
+LDFLAGS= $(LIBDIRS)
 
 TARGETS = simple double
 
