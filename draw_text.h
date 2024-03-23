@@ -17,7 +17,7 @@ void draw_text(
 		const char* text)
 {
 	const float scale = 0.25f;
-
+	glLineWidth(1.0f);
 	glColor3f(1.0f, 1.0f, 0.0f);
 	glMatrixMode(GL_PROJECTION);
 	glPushMatrix();
